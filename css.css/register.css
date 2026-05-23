@@ -51,7 +51,7 @@ button:hover {
     background-color: rgb(199, 15, 15)
 }
 
-.animesignup {
+.animeregister {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ button:hover {
     font-family: 'Arial Black', Gadget, sans-serif;
 }
 
-.signupform {
+.registerform {
     background-color: rgb(177, 16, 16);
     padding: 30px;
     border-radius: 10px;

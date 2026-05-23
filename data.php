@@ -1,7 +1,6 @@
 <?php
     $characters_title = 'Characters';
-    $signup_title = 'Signup';
-    $login_title = 'Login';
+    $register_title = 'Register';
     $about_title = 'About';
     $films_title = 'Films';
     $anime_title = 'Anime';

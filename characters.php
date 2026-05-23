@@ -22,11 +22,14 @@ include_once "data.php";
         <img src="https://i.pinimg.com/736x/86/80/bb/8680bbd7552d6513168dd92543cb8608.jpg" alt="Anime Logo">
     </div>
     <div class="contacts">
+        <button class="home">HOME</button>
         <button class="characters">CHARACTERS</button>
         <button class="films">FILMS</button>
         <button class="about">ABOUT</button>
-        <button class="signup">SIGN UP</button>
-        <button class="login">LOGIN</button>
+        <button class="register">REGISTER</button>
+        <button class="account">ACCOUNT</button>
+        <button class="Admin_Panel">Admin_Panel</button>
+        
     </div>
 
    <div class='characters'>  

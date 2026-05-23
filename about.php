@@ -1,5 +1,5 @@
 <?php
-    
+    session_start();
 include_once "data.php";
 
 ?>
@@ -19,13 +19,23 @@ include_once "data.php";
     <div class="logo">
         <img src="https://i.pinimg.com/736x/86/80/bb/8680bbd7552d6513168dd92543cb8608.jpg" alt="Anime Logo">
     </div>
-    <div class="contacts">
-        <button class="characters">CHARACTERS</button>
-        <button class="films">FILMS</button>
-        <button class="about">ABOUT</button>
-        <button class="signup">SIGN UP</button>
-        <button class="login">LOGIN</button>
-    </div>
+   <div class="contacts">
+    <button class="home" onclick="window.location.href='home.php'">HOME</button>
+    <button class="characters" onclick="window.location.href='characters.php'">CHARACTERS</button>
+    <button class="films" onclick="window.location.href='films.php'">FILMS</button>
+    <button class="about" onclick="window.location.href='about.php'">ABOUT</button>
+    
+    <?php if (isset($_SESSION['user_id'])) { ?>
+        <button class="account" onclick="window.location.href='account.php'">ACCOUNT</button>
+        <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == true) { ?>
+            <button class="Admin_Panel" onclick="window.location.href='Admin_Panel.php'">Admin Panel</button>
+        <?php } ?>
+        <button onclick="window.location.href='logout.php'">Logout</button>
+    <?php } else { ?>
+        <button class="register" onclick="window.location.href='register.php'">REGISTER</button>
+        <button onclick="window.location.href='login.php'">LOGIN</button>
+    <?php } ?>
+</div>
     <div class="info">
         <h2>About The Creator Of This Website</h1>
             <h1>Conect Me</h1>
